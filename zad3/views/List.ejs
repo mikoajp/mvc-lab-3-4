@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+<h1>List of Students</h1>
+<ul>
+    <% students.forEach(student => { %>
+        <li>ID: <%= student.id %>, Name: <%= student.fullName %>, Code: <%= student.code %>, Field of Studies: <%= student.fieldOfStudies %></li>
+    <% }) %>
+</ul>
+<a href="/">Add new student</a>
+</body>
+</html>

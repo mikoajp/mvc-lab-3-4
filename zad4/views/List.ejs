@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+<%- include('partials/navigation') %>
+
+<h1>List of Students</h1>
+<ul>
+    <% students.forEach(student => { %>
+        <li>
+            <p><%= student.fullName %></p>
+            <p><%= student.code %></p>
+            <p><%= student.fieldOfStudies %></p>
+        </li>
+    <% }) %>
+</ul>
+</body>
+</html>
